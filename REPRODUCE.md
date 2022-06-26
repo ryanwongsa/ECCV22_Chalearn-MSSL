@@ -12,7 +12,7 @@ Extract to base repo directory
 
 ```bash
 docker build -t chalearn .
-docker run -it --gpus all -v <REPO_PATH>:/ chalearn /bin/bash
+docker run -it --gpus all -v <REPO_PATH>:/chalearn/ chalearn /bin/bash
 cd /charlearn/
 ```
 
