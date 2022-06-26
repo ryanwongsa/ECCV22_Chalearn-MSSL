@@ -3,9 +3,9 @@
 # Downloads
 
 
-Download the pretrained models and preprocessed data: https://drive.google.com/drive/folders/1CRxy_huiZFFBFzEZ45YzOo5HyqkLpDyL?usp=sharing
+Download the pretrained models and preprocessed data: [download](https://drive.google.com/file/d/1FN0t3H5bAB6fL8lsjNPonSsr_fUanHR4/view?usp=sharing)
 
-extract to base repo directory
+Extract to base repo directory
 
 
 # Prepare docker
