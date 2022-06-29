@@ -46,6 +46,44 @@ This will create a `.pkl` file in the `save_dir` to be used for the ensemble.
 Submssions trained with folder prefix `5fold_` were trained only on training dataset while `7fold_` were trained with a mixture of training and validation data.
 
 
+# Full ensemble models:
+```
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg01/maxfix_neg01_fold4/ckpts/best_checkpoint_155_0.4848.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg05/maxfix_neg05_fold4/ckpts/best_checkpoint_180_0.4932.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg0/maxfix_neg0_fold4/ckpts/best_checkpoint_120_0.3233.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg0/maxfix_neg0_fold1/ckpts/best_checkpoint_145_0.3379.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg01/maxfix_neg01_fold1/ckpts/best_checkpoint_125_0.4596.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg05/maxfix_neg05_fold1/ckpts/best_checkpoint_140_0.4892.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg0/maxfix_neg0_fold0/ckpts/best_checkpoint_125_0.2309.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg01/maxfix_neg01_fold0/ckpts/best_checkpoint_190_0.3855.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg05/maxfix_neg05_fold0/ckpts/best_checkpoint_160_0.4257.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg0/maxfix_neg0_fold2/ckpts/best_checkpoint_110_0.3898.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg01/maxfix_neg01_fold2/ckpts/best_checkpoint_120_0.5180.pt
+checkpoint_dir = chalearn_mssl/submissions/5fold_neg05/maxfix_neg05_fold2/ckpts/best_checkpoint_65_0.5259.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold0/ckpts/best_checkpoint_80_0.2793.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold0/ckpts/best_checkpoint_165_0.4602.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold0/ckpts/best_checkpoint_145_0.4727.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold1/ckpts/best_checkpoint_55_0.5041.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold1/ckpts/best_checkpoint_185_0.5075.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold1/ckpts/best_checkpoint_165_0.3156.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold2/ckpts/best_checkpoint_140_0.6750.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold2/ckpts/best_checkpoint_140_0.6392.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold2/ckpts/best_checkpoint_125_0.4336.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold4/ckpts/best_checkpoint_160_0.5983.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold4/ckpts/best_checkpoint_200_0.5447.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold4/ckpts/best_checkpoint_100_0.3466.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold5/ckpts/best_checkpoint_110_0.5096.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold5/ckpts/best_checkpoint_95_0.4951.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold5/ckpts/best_checkpoint_105_0.2947.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg0/valinc_maxfix_neg0_fold6/ckpts/best_checkpoint_90_0.3334.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg01/valinc_maxfix_neg01_fold6/ckpts/best_checkpoint_185_0.5421.pt
+checkpoint_dir = chalearn_mssl/submissions/7fold_neg05/valinc_maxfix_neg05_fold6/ckpts/best_checkpoint_90_0.5404.pt
+
+python main_results_creator_v2.py --lmdb_dir chalearn_mssl/processed/test/lmdb_videos/test --checkpoint_dir $(checkpoint_dir) --save_dir chalearn_results
+```
+
+
+
 # Ensemble
 
 ```python
